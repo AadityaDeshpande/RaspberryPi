@@ -1,2 +1,2 @@
 # RaspberryPi
-these are some of the codes for Raspberry pi   
+these are some of the codes for Raspberry pi Programming 
