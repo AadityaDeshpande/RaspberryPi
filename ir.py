@@ -2,12 +2,15 @@
 Object detection:
 below code will make Green led ON when the object is near, else red will remain ON
 input will get at pin 14 accordingly we will give output at 3 or 4
+
+information about the functions are at 
+https://pythonhosted.org/RPIO/rpio_py.html#gpio-input-output
 '''
 
 import RPi.GPIO as IO
 import time
 IO.setwarnings(False)
-IO.setmode(IO.BCM)
+IO.setmode(IO.BCM)    # change to BOARD numbering schema
 
 IO.setup(2,IO.OUT)    # GPIO 2 -> Red LED as output
 IO.setup(3,IO.OUT)    # GPIO 3 -> Green LED as output
